@@ -1,0 +1,10 @@
+// @carnesen/tsconfig/nodejs/tsconfig.json
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "es2017"
+    ],
+    "target": "es2017"
+  }
+}

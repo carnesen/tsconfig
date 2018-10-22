@@ -1,0 +1,31 @@
+{
+  "name": "@carnesen/tsconfig",
+  "version": "0.0.0-0",
+  "description": "TypeScript shared config for @carnesen projects",
+  "main": "index.json",
+  "scripts": {
+    "build": "npm run clean && tsc --project example",
+    "check": "tslint --project example",
+    "clean": "rimraf example/lib/",
+    "test": "npm run check && npm run build",
+    "preversion": "npm test",
+    "postversion": "npm publish"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@carnesen/tslint-config": "0.0.1",
+    "rimraf": "2.6.2",
+    "tslint": "5.11.0",
+    "typescript": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carnesen/tsconfig.git"
+  },
+  "author": "Chris Arnesen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carnesen/tsconfig/issues"
+  },
+  "homepage": "https://github.com/carnesen/tsconfig#readme"
+}
