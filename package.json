@@ -2,7 +2,7 @@
   "name": "@carnesen/tsconfig",
   "version": "0.0.1",
   "description": "TypeScript shared config for @carnesen projects",
-  "main": "index.json",
+  "main": "tsconfig.json",
   "scripts": {
     "build": "npm run clean && tsc --project example",
     "check": "tslint --project example",
