@@ -1,4 +1,4 @@
-# @carnesen/tsconfig
+# @carnesen/tsconfig [![Build Status](https://travis-ci.com/carnesen/tsconfig.svg?branch=master)](https://travis-ci.com/carnesen/tsconfig)
 
 TypeScript configurations for `@carnesen` projects
 
