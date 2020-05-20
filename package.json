@@ -12,10 +12,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@carnesen/tslint-config": "0.1.0",
-    "rimraf": "2.6.3",
-    "tslint": "5.12.0",
-    "typescript": "3.2.2"
+    "@carnesen/tslint-config": "0.2.0",
+    "rimraf": "3.0.2",
+    "tslint": "6.1.2",
+    "typescript": "3.9.3"
   },
   "repository": {
     "type": "git",
