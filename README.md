@@ -1,4 +1,4 @@
-# @carnesen/tsconfig [![Build Status](https://travis-ci.com/carnesen/tsconfig.svg?branch=master)](https://travis-ci.com/carnesen/tsconfig)
+# @carnesen/tsconfig ![test badge](https://github.com/carnesen/tsconfig/workflows/test/badge.svg)
 
 TypeScript configurations for `@carnesen` projects
 
