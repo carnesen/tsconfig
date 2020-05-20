@@ -1,5 +1,5 @@
-# @carnesen/tsconfig ![test badge](https://github.com/carnesen/tsconfig/workflows/test/badge.svg)
-
+# @carnesen/tsconfig
+[![Build Status](https://github.com/carnesen/tsconfig/workflows/test/badge.svg)](https://github.com/carnesen/tsconfig/actions?query=workflow%3Atest+branch%3Amaster)
 TypeScript configurations for `@carnesen` projects
 
 ## Install
