@@ -1,1 +1,7 @@
-// This file is intentionally empty
+export function add(...nums: number[]): number {
+  let result = 0;
+  for (const num of nums) {
+    result += num;
+  }
+  return result;
+}
