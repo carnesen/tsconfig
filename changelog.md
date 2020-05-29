@@ -1,6 +1,9 @@
 # `@carnesen/tsconfig` change log
+## 2020-05-29 - 0.3.1
+### Fix
+- Target es2020 otherwise we can't use optional chaining etc.
 
-## 0.3.0
+## 2020-05-26 - 0.3.0
 ### Breaking
 Remove entrypoint nodejs/tsconfig.json. Just use the main entrypoint.
 
