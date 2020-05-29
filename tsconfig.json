@@ -87,7 +87,7 @@
     // "stripInternal": false,
     // "suppressExcessPropertyErrors": false,
     // "suppressImplicitAnyIndexErrors": false,
-    "target": "esnext",
+    "target": "es2020",
     // "traceResolution": false,
     // "tsBuildInfoFile": ".tsbuildinfo",
     // "types": [],
