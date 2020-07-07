@@ -93,4 +93,7 @@
     // "types": [],
     // "typeRoots": [],
   },
+  "ts-node": {
+    "transpileOnly": true
+  },
 }
