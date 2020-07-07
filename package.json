@@ -4,22 +4,20 @@
   "description": "TypeScript configuration for @carnesen projects",
   "main": "tsconfig.json",
   "scripts": {
-    "build": "rimraf example/lib/ && tsc --project example",
-    "lint": "eslint --ext .ts example/src",
-    "test": "npm run lint && npm run build",
+    "build": "rm -rf example/lib/ && tsc --project example",
+    "lint": "eslint --ext .ts example/src has-type-error.ts",
+    "test": "npm run lint && ts-node has-type-error.ts && npm run build",
     "prepublishOnly": "npm test"
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "7.1.0",
-    "eslint-config-carnesen": "3.0.0",
-    "rimraf": "3.0.2",
-    "typescript": "3.9.3"
+    "@types/node": "14.0.19",
+    "eslint": "7.4.0",
+    "eslint-config-carnesen": "4.4.0",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.6"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carnesen/tsconfig.git"
-  },
+  "repository": "github:carnesen/tsconfig",
   "author": "Chris Arnesen",
   "license": "MIT",
   "bugs": {

@@ -1,4 +1,7 @@
-# `@carnesen/tsconfig` change log
+# @carnesen/tsconfig changelog
+## 2020-07-07 - 0.4.0
+- Set ts-node transpileOnly = true
+
 ## 2020-05-29 - 0.3.1
 ### Fix
 - Target es2020 otherwise we can't use optional chaining etc.
