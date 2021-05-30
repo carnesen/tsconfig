@@ -92,8 +92,5 @@
 		// "tsBuildInfoFile": ".tsbuildinfo",
 		// "types": [],
 		// "typeRoots": [],
-	},
-	"ts-node": {
-		"transpileOnly": true
-	},
+	}
 }
