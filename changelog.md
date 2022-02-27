@@ -2,6 +2,10 @@
 
 ## Upcoming
 
+Update for Node.js 16 per https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
+- `"lib": ["ES2021"]`
+- `"target": "ES2021"`
+
 ## v0.4.1 (2021-05-29)
 
 - Internal: Update dev dependencies

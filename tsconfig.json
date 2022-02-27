@@ -37,7 +37,7 @@
 		"useDefineForClassFields": true,
 		// "keyofStringsOnly": false,
 		"lib": [
-			"es2020"
+			"es2021"
 		],
 		// "listEmittedFiles": false,
 		// "listFiles": false,
@@ -87,7 +87,7 @@
 		// "stripInternal": false,
 		// "suppressExcessPropertyErrors": false,
 		// "suppressImplicitAnyIndexErrors": false,
-		"target": "es2020",
+		"target": "es2021",
 		// "traceResolution": false,
 		// "tsBuildInfoFile": ".tsbuildinfo",
 		// "types": [],
