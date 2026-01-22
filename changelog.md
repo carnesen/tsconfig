@@ -2,6 +2,10 @@
 
 ## Upcoming
 
+## carnesen-tsconfig-1.0.0 (2026-01-22)
+
+
+
 ## carnesen-tsconfig-0.5.0 (2022-02-27)
 
 Update for Node.js 16 per https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
