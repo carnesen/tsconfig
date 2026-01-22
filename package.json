@@ -20,7 +20,8 @@
     "test:tsc": "npm run build:tsc && node --test dist-tsc/example.test.js",
     "test:esbuild": "npm run build:esbuild && node --test dist-esbuild/example.test.js",
     "test:pack": "node --import tsx --test src/integration.test.ts",
-    "test": "npm run test:tsx && npm run test:tsc && npm run test:esbuild",
+    "test": "npm run test:tsc",
+    "test:all": "npm run test:tsx && npm run test:tsc && npm run test:esbuild",
     "lint": "eslint src"
   },
   "devDependencies": {

@@ -13,7 +13,8 @@ Shareable TypeScript configuration for @carnesen projects. The package exports t
 ## Development
 
 ```bash
-npm test              # Run all tests (tsx, tsc, esbuild)
+npm test              # Build with tsc, then run compiled tests (default)
+npm run test:all      # Run all tests (tsx, tsc, esbuild)
 npm run test:tsx      # Run tests directly on TypeScript source
 npm run test:tsc      # Build with tsc, then run compiled tests
 npm run test:esbuild  # Build with esbuild, then run compiled tests
