@@ -32,6 +32,8 @@ dispatch.yaml
 
 #Build generated
 dist/
+dist-tsc/
+dist-esbuild/
 build/
 built/
 lib/

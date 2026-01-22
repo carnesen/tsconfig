@@ -2,18 +2,42 @@
 name: test
 on: [ push, pull_request ]
 jobs:
-  test:
+  test-tsx:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ '16' ]
-    name: Node.js ${{ matrix.node-version }}
     steps:
-    - name: Checkout source
-      uses: actions/checkout@master
-    - name: Install Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm test
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci
+      - run: npm run test:tsx
+
+  test-tsc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci
+      - run: npm run test:tsc
+
+  test-esbuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci
+      - run: npm run test:esbuild
+
+  test-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci
+      - run: npm run test:pack
