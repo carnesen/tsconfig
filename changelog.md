@@ -2,6 +2,10 @@
 
 ## Upcoming
 
+## carnesen-tsconfig-3.0.0 (2026-01-22)
+
+
+
 ## carnesen-tsconfig-1.0.0 (2026-01-22)
 
 
