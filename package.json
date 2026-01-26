@@ -4,6 +4,7 @@
   "description": "TypeScript configuration for @carnesen projects",
   "type": "module",
   "exports": {
+    ".": "./node24/tsconfig.json",
     "./node24": "./node24/tsconfig.json"
   },
   "files": [

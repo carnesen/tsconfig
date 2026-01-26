@@ -1,6 +1,7 @@
 # @carnesen/tsconfig
 
 [![Build Status](https://github.com/carnesen/tsconfig/workflows/test/badge.svg)](https://github.com/carnesen/tsconfig/actions?query=workflow%3Atest+branch%3Amaster)
+
 TypeScript configurations for `@carnesen` projects
 
 ## Install
@@ -11,18 +12,38 @@ npm install --save-dev typescript @carnesen/tsconfig
 
 ## Usage
 
-These instructions assume that you're using TypeScript >=[3.2 with support for "tsconfig.json inheritance via Node.js packages"](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-2.html). 
-
-Create a file `tsconfig.json` at the root of your project with contents:
+Create a file `tsconfig.json` at the root of your project:
 
 ```json
 {
-  "extends": "@carnesen/tsconfig"
+  "extends": "@carnesen/tsconfig/node24",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src"]
 }
 ```
-Add your own `compilerOptions` or any other properties described [here in the TypeScript docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-The `@carnesen/tsconfig` [base configuration](tsconfig.json) sets some desirable non-default values such as `"strict": true`. It also enumerates as comments most of the other available configuration options. The base configuration can be used directly as `"extends": "@carnesen/tsconfig"`. The configuration sets "es2020" as the compiler target, suitable for use with Node.js >=14 or modern browsers.
+Add your own `compilerOptions` or any other properties described [in the TypeScript docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## What's Included
+
+The configuration extends [`@tsconfig/node24`](https://github.com/tsconfig/bases/blob/main/bases/node24.json) (ES2024, strict mode, nodenext modules) and adds:
+
+- **Output artifacts**: `declaration`, `declarationMap`, `sourceMap`
+- **Extra strictness**: `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`, `noImplicitReturns`
+- **Safety**: `noEmitOnError`, `verbatimModuleSyntax`
+
+## AGENTS.md Snippet
+
+Add this to your project's `AGENTS.md` to give AI coding assistants context about the TypeScript configuration:
+
+```markdown
+## TypeScript
+
+Extends `@carnesen/tsconfig/node24` (ES2024, strict mode, nodenext modules). Notable settings: `noUncheckedIndexedAccess` and `exactOptionalPropertyTypes` require explicit undefined handling for array access and optional props.
+```
 
 ## More information
 
