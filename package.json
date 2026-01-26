@@ -1,6 +1,6 @@
 {
   "name": "@carnesen/tsconfig",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "TypeScript configuration for @carnesen projects",
   "type": "module",
   "exports": {
