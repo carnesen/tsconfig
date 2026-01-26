@@ -2,7 +2,7 @@
   "name": "@carnesen/tsconfig",
   "version": "3.0.0",
   "description": "TypeScript configuration for @carnesen projects",
-  "type": "commonjs",
+  "type": "module",
   "exports": {
     "./node24": "./node24/tsconfig.json"
   },
@@ -15,14 +15,13 @@
   },
   "scripts": {
     "build:tsc": "rm -rf dist-tsc && tsc",
-    "build:esbuild": "rm -rf dist-esbuild && esbuild src/example.ts src/example.test.ts --outdir=dist-esbuild --format=cjs --platform=node",
+    "build:esbuild": "rm -rf dist-esbuild && esbuild src/example.ts src/example.test.ts --outdir=dist-esbuild --format=esm --platform=node",
     "test:tsx": "node --import tsx --test src/example.test.ts",
     "test:tsc": "npm run build:tsc && node --test dist-tsc/example.test.js",
     "test:esbuild": "npm run build:esbuild && node --test dist-esbuild/example.test.js",
     "test:pack": "node --import tsx --test src/integration.test.ts",
     "test": "npm run test:tsc",
-    "test:all": "npm run test:tsx && npm run test:tsc && npm run test:esbuild",
-    "lint": "eslint src"
+    "test:all": "npm run test:tsx && npm run test:tsc && npm run test:esbuild"
   },
   "devDependencies": {
     "@carnesen/dev": "0.4.0",

@@ -3,8 +3,4 @@
     "@tsconfig/node24",
     "../overrides/tsconfig.json",
   ],
-  "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-  }
 }
