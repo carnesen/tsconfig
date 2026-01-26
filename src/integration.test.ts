@@ -39,7 +39,7 @@ describe('integration test with npm pack', () => {
         {
           name: 'test-project',
           version: '1.0.0',
-          type: 'commonjs',
+          type: 'module',
         },
         null,
         2
@@ -107,7 +107,7 @@ describe('integration test with npm pack', () => {
   });
 
   it('esbuild compiles successfully with installed package', () => {
-    execSync('./node_modules/.bin/esbuild src/*.ts --outdir=dist-esbuild --format=cjs --platform=node', {
+    execSync('./node_modules/.bin/esbuild src/*.ts --outdir=dist-esbuild --format=esm --platform=node', {
       cwd: tempDir,
       encoding: 'utf-8',
       stdio: 'pipe',

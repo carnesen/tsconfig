@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test';
 import * as assert from 'node:assert';
 import { add } from './example.js';
-import * as pkg from '../package.json';
+import pkg from '../package.json' with { type: 'json' };
 
 describe('TypeScript syntax and compilation tests', () => {
   describe('basic functionality', () => {
